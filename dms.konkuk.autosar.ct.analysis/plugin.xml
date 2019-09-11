@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="dms.konkuk.autosar.ct.analysis.AnalysisPerspective"
+            id="dms.konkuk.autosar.ct.analysis.AnalysisPerspective"
+            name="ACT Analysis">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="dms.konkuk.autosar.ct.preferences.AutosarCTPref"
+            id="dms.konkuk.autosar.ct.Pref"
+            name="AUTOSAR CT">
+      </page>
+      <page
+            category="dms.konkuk.autosar.ct.Pref"
+            class="dms.konkuk.autosar.ct.preferences.AnalysisPref"
+            id="dms.konkuk.autosar.ct.PrefAnalysis"
+            name="AnalysisPref">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="dms.konkuk.autosar.ct.wizardCategory"
+            name="AUTOSAR Conformance Test">
+      </category>
+      <wizard
+            category="dms.konkuk.autosar.ct.wizardCategory"
+            class="dms.konkuk.autosar.ct.wizards.ProjectWizard"
+            finalPerspective="dms.konkuk.autosar.ct.analysis.AnalysisPerspective"
+            hasPages="true"
+            icon="icons/sqlfile.gif"
+            id="dms.konkuk.autosar.ct.wizards.project"
+            name="New AUTOSAR CT Project"
+            project="true">
+      </wizard>
+      <wizard
+            category="dms.konkuk.autosar.ct.wizardCategory"
+            class="dms.konkuk.autosar.ct.wizards.NewSWSDoc"
+            finalPerspective="dms.konkuk.autosar.ct.analysis.AnalysisPerspective"
+            hasPages="true"
+            icon="icons/sqlfile.gif"
+            id="dms.konkuk.autosar.ct.wizard.swsdoc"
+            name="New SWS Document"
+            project="false">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="dms.konkuk.autosar.ct.editor.SwsEditor"
+            default="true"
+            extensions="sws"
+            icon="icons/sqlfile.gif"
+            id="dms.konkuk.autosar.ct.editor.SWSEditor"
+            name="SWS Editor">
+      </editor>
+      <editor
+            class="dms.konkuk.autosar.ct.editor.projEditor"
+            default="true"
+            extensions="actProj"
+            icon="icons/sample.gif"
+            id="dms.konkuk.autosar.ct.editor.projEditor"
+            name="ACT Project Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="dms.konkuk.autosar.ct.actions.AddSwsItem"
+            id="dms.konkuk.autosar.ct.analysis.addSwsCommand"
+            name="Add SWS Item">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="dms.konkuk.autosar.ct.analysis.swsActionSet"
+            label="SWS Action">
+         <action
+               definitionId="dms.konkuk.autosar.ct.analysis.addSwsCommand"
+               id="dms.konkuk.autosar.ct.analysis.addSwsAction"
+               label="label"
+               style="push">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="dms.konkuk.autosar.ct.analysis.viewerContribution1"
+            targetID="dms.konkuk.autosar.ct.analysis.viewerContribution1">
+         <action
+               class="dms.konkuk.autosar.ct.model.Data"
+               id="dms.konkuk.autosar.ct.analysis.action1"
+               label="data">
+         </action>
+      </viewerContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="dms.konkuk.autosar.ct.birt.BirtView"
+            id="dms.konkuk.autosar.ct.analysis.view1"
+            name="Report View"
+            restorable="true">
+      </view>
+   </extension>
+</plugin>

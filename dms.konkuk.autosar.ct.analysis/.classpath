@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="swing2swt.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.codegen_2.4.0.v200902171115.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.codegen.ecore_2.4.2.v200902171115.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.common_2.4.0.v200902171115.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore_2.4.2.v200902171115.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.emf.ecore.xmi_2.4.1.v200902171115.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.common_1.4.0.v200805131030.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.uml_2.2.2.v200811051031.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.uml2.uml.resources_2.2.0.v200805131030.jar"/>
+	<classpathentry kind="lib" path="lib/serializer.jar"/>
+	<classpathentry kind="lib" path="lib/swing2swt.jar"/>
+	<classpathentry kind="lib" path="lib/xalan.jar"/>
+	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="lib/xercesSamples.jar"/>
+	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="lib/xmlParserAPIs.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.ui_3.4.2.r342_v20090107-0800.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jdt.core_3.4.4.v_894_R34x.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.birt.core_2.3.2.r232_20090204a.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.birt.report.runtime_2.3.2.r232_v20081010.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

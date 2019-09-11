@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_ooUAgdvmEd6x85TUQj6oKg">
+  <elementImport xmi:id="_oxsmANvmEd6x85TUQj6oKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_oycM4NvmEd6x85TUQj6oKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_oycM4dvmEd6x85TUQj6oKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_oycM4tvmEd6x85TUQj6oKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_s8ucANvmEd6x85TUQj6oKg" name="MTCEa">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_Rqjj8NvpEd6x85TUQj6oKg" name="init" clientDependency="_fNDfoNvpEd6x85TUQj6oKg" type="_VXoSoNvpEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_rvVUcNvpEd6x85TUQj6oKg" name="ea" clientDependency="_zR1ckNvpEd6x85TUQj6oKg" type="_w3KJ4NvpEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_QbCx8NvrEd6x85TUQj6oKg" name="cbk" clientDependency="_YXd18NvrEd6x85TUQj6oKg" type="_SjGDkNvrEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_o6MocNvrEd6x85TUQj6oKg" name="eepTest" clientDependency="_0FTO8NvrEd6x85TUQj6oKg" type="_r4e-gNvrEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_E5dvsNvsEd6x85TUQj6oKg" name="main" clientDependency="_NfntMNvsEd6x85TUQj6oKg" type="_ImjFcNvsEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_cTejENvsEd6x85TUQj6oKg" name="testmemAccess" clientDependency="_mnAoYNvsEd6x85TUQj6oKg" type="_eYZoMNvsEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_tGJ2ENvsEd6x85TUQj6oKg" name="gvi" clientDependency="_ztpHcNvsEd6x85TUQj6oKg" type="_vQu3QNvsEd6x85TUQj6oKg" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_7_YUINvsEd6x85TUQj6oKg" name="verdict" clientDependency="_GZ6ZUNvtEd6x85TUQj6oKg" type="_95IEANvsEd6x85TUQj6oKg" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VXoSoNvpEd6x85TUQj6oKg" name="Ea_Init">
+    <ownedOperation xmi:id="_Za6h4NvpEd6x85TUQj6oKg" name="init">
+      <ownedParameter xmi:id="_NK8BMNvtEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_fNDfoNvpEd6x85TUQj6oKg" supplier="_VXoSoNvpEd6x85TUQj6oKg" client="_Rqjj8NvpEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_w3KJ4NvpEd6x85TUQj6oKg" name="LowerMemIf">
+    <ownedOperation xmi:id="_3WTXkNvpEd6x85TUQj6oKg" name="cancel">
+      <ownedParameter xmi:id="_45sc8NvpEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Ds2BANvrEd6x85TUQj6oKg" name="GetJobResult">
+      <ownedParameter xmi:id="_KTlrgNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_D0Ss0NvrEd6x85TUQj6oKg" name="GetStatus">
+      <ownedParameter xmi:id="_L05GMNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_D6s20NvrEd6x85TUQj6oKg" name="Write">
+      <ownedParameter xmi:id="_NKRkwNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_D_w9ANvrEd6x85TUQj6oKg" name="Read">
+      <ownedParameter xmi:id="_OoJ4ANvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_zR1ckNvpEd6x85TUQj6oKg" supplier="_w3KJ4NvpEd6x85TUQj6oKg" client="_rvVUcNvpEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SjGDkNvrEd6x85TUQj6oKg" name="MemTestCallback">
+    <ownedOperation xmi:id="_bHdRUNvrEd6x85TUQj6oKg" name="getLastCallback">
+      <ownedParameter xmi:id="_kBa7oNvrEd6x85TUQj6oKg" type="_SjGDkNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bN20QNvrEd6x85TUQj6oKg" name="setExpectNotification">
+      <ownedParameter xmi:id="_nGt4oNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_YXd18NvrEd6x85TUQj6oKg" supplier="_SjGDkNvrEd6x85TUQj6oKg" client="_QbCx8NvrEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_r4e-gNvrEd6x85TUQj6oKg" name="EepFlsTest">
+    <ownedOperation xmi:id="_wdSmcNvrEd6x85TUQj6oKg" name="Cancel">
+      <ownedParameter xmi:id="_QNZFkNvtEd6x85TUQj6oKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_woBPwNvrEd6x85TUQj6oKg" name="EepReadWrite">
+      <ownedParameter xmi:id="_SAI1kNvtEd6x85TUQj6oKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wuuUsNvrEd6x85TUQj6oKg" name="finishJob">
+      <ownedParameter xmi:id="_5uEOQNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_w0rywNvrEd6x85TUQj6oKg" name="getEepAddress">
+      <ownedParameter xmi:id="_7eH2oNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_w6pQ0NvrEd6x85TUQj6oKg" name="getMaxWriteCount">
+      <ownedParameter xmi:id="_9wcekNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_xAmu4NvrEd6x85TUQj6oKg" name="getMode">
+      <ownedParameter xmi:id="_-15DsNvrEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_xGRSANvrEd6x85TUQj6oKg" name="setNextJobResult">
+      <ownedParameter xmi:id="_AqHaYNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_xUIH0NvrEd6x85TUQj6oKg" name="setStatus">
+      <ownedParameter xmi:id="_CFKcENvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0FTO8NvrEd6x85TUQj6oKg" supplier="_r4e-gNvrEd6x85TUQj6oKg" client="_o6MocNvrEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ImjFcNvsEd6x85TUQj6oKg" name="TestBswms">
+    <ownedOperation xmi:id="_KxIGoNvsEd6x85TUQj6oKg" name="clearTaskCallCount">
+      <ownedParameter xmi:id="_ThQfgNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_LMGLYNvsEd6x85TUQj6oKg" name="getTaskCallCount">
+      <ownedParameter xmi:id="_ZkbGYNvtEd6x85TUQj6oKg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Lq8DgNvsEd6x85TUQj6oKg" name="startCyclicExecution">
+      <ownedParameter xmi:id="_YFeRkNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MEa6gNvsEd6x85TUQj6oKg" name="stopCyclicExecution">
+      <ownedParameter xmi:id="_akw-gNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_NfntMNvsEd6x85TUQj6oKg" supplier="_ImjFcNvsEd6x85TUQj6oKg" client="_E5dvsNvsEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eYZoMNvsEd6x85TUQj6oKg" name="TestMemoryAccess">
+    <ownedOperation xmi:id="_hCa-cNvsEd6x85TUQj6oKg" name="allocate">
+      <ownedParameter xmi:id="_i4ST4NvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_haansNvsEd6x85TUQj6oKg" name="compare">
+      <ownedParameter xmi:id="_j5ZyoNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_hp6cQNvsEd6x85TUQj6oKg" name="read">
+      <ownedParameter xmi:id="_knmVYNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_h-eXANvsEd6x85TUQj6oKg" name="write">
+      <ownedParameter xmi:id="_llcdsNvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_mnAoYNvsEd6x85TUQj6oKg" supplier="_eYZoMNvsEd6x85TUQj6oKg" client="_cTejENvsEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vQu3QNvsEd6x85TUQj6oKg" name="GetVersionInfo">
+    <ownedOperation xmi:id="_DTMOENvvEd6x85TUQj6oKg" name="GetVersioninfo">
+      <ownedParameter xmi:id="_EvRxkNvvEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ztpHcNvsEd6x85TUQj6oKg" supplier="_vQu3QNvsEd6x85TUQj6oKg" client="_tGJ2ENvsEd6x85TUQj6oKg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_95IEANvsEd6x85TUQj6oKg" name="TestVerdict">
+    <ownedOperation xmi:id="__jOOUNvsEd6x85TUQj6oKg" name="getTestVerdict">
+      <ownedParameter xmi:id="_FHqHQNvtEd6x85TUQj6oKg" type="_95IEANvsEd6x85TUQj6oKg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_GZ6ZUNvtEd6x85TUQj6oKg" supplier="_95IEANvsEd6x85TUQj6oKg" client="_7_YUINvsEd6x85TUQj6oKg"/>
+</uml:Package>
