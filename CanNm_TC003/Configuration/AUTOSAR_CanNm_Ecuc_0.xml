@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecuc:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecuc="http://autosar.org/ecuc/4.0.0">
+  <CanNmModuleConfig>
+    <CTCanNmCommonPublishedInformation CTCanNmModuleId="31" CTCanNmSwMajorVersion="0" CTCanNmSwMinorVersion="4" CTCanNmSwPatchVersion="0" CTCanNmVendorId="0"/>
+    <CTCanNmDemInformation CTCanNmDemEventStatusFailed="1" CTCanNmECanIfTransmitError="1" CTCanNmEInitFailed="2" CTCanNmENetworkTimeout="3"/>
+    <CTCanNmGeneralConfig CTCanNmConfigSetIndex="0" CTCanNmRxPduData="0011AABBCCDDEEFF" CTCanNmTCMaxTimeout="20.0" CTCanNmTxData="0102030405060708"/>
+    <CanNmGlobalConfig CanNmBusLoadReductionEnabled="true" CanNmBusSynchronizationEnabled="true" CanNmComControlEnabled="true" CanNmImmediateRestartEnabled="true" CanNmImmediateTxconfEnabled="true" CanNmMainFunctionPeriod="0.050" CanNmNodeDetectionEnabled="true" CanNmPassiveModeEnabled="false" CanNmPduRxIndicationEnabled="true" CanNmRemoteSleepIndEnabled="true" CanNmRepeatMsgIndEnabled="true" CanNmStateChangeIndEnabled="true" CanNmUserDataEnabled="true" CanNmVersionInfoApi="true">
+      <CanNmChannelConfig CanNmBusLoadReductionActive="true" CanNmMsgCycleOffset="100" CanNmMsgCycleTime="1000" CanNmMsgReducedTime="600" CanNmMsgTimeoutTime="1000" CanNmNodeId="100" CanNmPduCbvPosition="CANNM_PDU_BYTE_1" CanNmPduNidPosition="CANNM_PDU_BYTE_0" CanNmRemoteSleepIndTime="8000" CanNmRepeatMessageTime="3000" CanNmTimeoutTime="5000" CanNmUserDataLength="6" CanNmWaitBusSleepTime="3000" CanNmChannelId="0" CanNmPduLength="8" CanNmChannelHandle="10" CanNmMainFunctionPeriod="1" CanNmChannelActive="true">
+        <CTCanNmChannelConfig CTCanNmChannelIdRef="255" CTCanNmNodeId="100"/>
+        <CanNmRxPdu CanNmRxPduId="255"/>
+        <CanNmTxPdu CanNmTxPduId="0">
+          <CTCanNmTxPdu CTCanNmTxPduRef="2"/>
+        </CanNmTxPdu></CanNmChannelConfig>
+      <CanNmChannelConfig CanNmBusLoadReductionActive="true"
+      	CanNmMsgCycleOffset="0" CanNmMsgCycleTime="1000"
+      	CanNmMsgReducedTime="1000" CanNmMsgTimeoutTime="1000"
+      	CanNmNodeId="100" CanNmPduCbvPosition="CANNM_PDU_BYTE_1"
+      	CanNmPduNidPosition="CANNM_PDU_BYTE_0"
+      	CanNmRemoteSleepIndTime="8000" CanNmRepeatMessageTime="4000"
+      	CanNmTimeoutTime="6000" CanNmUserDataLength="6"
+      	CanNmWaitBusSleepTime="4000" CanNmChannelId="1"
+      	CanNmPduLength="8" CanNmChannelHandle="11"
+      	CanNmMainFunctionPeriod="1" CanNmChannelActive="true">
+      	<CTCanNmChannelConfig CTCanNmChannelIdRef="255"
+      		CTCanNmNodeId="100" />
+      	<CanNmRxPdu CanNmRxPduId="255" />
+      	<CanNmTxPdu CanNmTxPduId="1">
+      		<CTCanNmTxPdu CTCanNmTxPduRef="2" />
+      	</CanNmTxPdu>
+      </CanNmChannelConfig>
+    </CanNmGlobalConfig>
+  </CanNmModuleConfig>
+</ecuc:Configuration>
